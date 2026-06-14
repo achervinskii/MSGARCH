@@ -87,6 +87,7 @@ Useful links:
 
 Authors:
 \itemize{
+  \item Keven Bluteau \email{Keven.Bluteau@usherbrooke.ca} (\href{https://orcid.org/0000-0003-2990-4807}{ORCID})
   \item David Ardia \email{david.ardia.ch@gmail.com} (\href{https://orcid.org/0000-0003-2823-782X}{ORCID})
   \item Leopoldo Catania \email{leopoldo.catania@econ.au.dk} (\href{https://orcid.org/0000-0002-0981-1921}{ORCID})
   \item Denis-Alexandre Trottier \email{denis-alexandre.trottier.1@ulaval.ca}

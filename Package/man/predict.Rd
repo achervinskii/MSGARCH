@@ -74,6 +74,10 @@ A list of class \code{MSGARCH_FORECAST} with the following elements:
  Draws sampled from the predictive distributions (matrix of size \code{nahead} x \code{nsim}).\cr
  If \code{do.return.draw = FALSE}:\cr
  \code{NULL}
+ \item \code{vol_draw}: If \code{do.return.draw = TRUE}:\cr
+ Conditional volatility draws from the simulations (matrix of size \code{nahead} x \code{nsim}).\cr
+ If \code{do.return.draw = FALSE}:\cr
+ \code{NULL}
  }
 The \code{MSGARCH_FORECAST} class contains the \code{plot} method.
 }

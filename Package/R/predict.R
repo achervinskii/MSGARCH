@@ -28,6 +28,10 @@
 #'  Draws sampled from the predictive distributions (matrix of size \code{nahead} x \code{nsim}).\cr
 #'  If \code{do.return.draw = FALSE}:\cr
 #'  \code{NULL}
+#'  \item \code{vol_draw}: If \code{do.return.draw = TRUE}:\cr
+#'  Conditional volatility draws from the simulations (matrix of size \code{nahead} x \code{nsim}).\cr
+#'  If \code{do.return.draw = FALSE}:\cr
+#'  \code{NULL}
 #'  }
 #' The \code{MSGARCH_FORECAST} class contains the \code{plot} method.
 #' @details If a matrix of MCMC posterior draws is given, the
@@ -70,6 +74,7 @@ predict.MSGARCH_SPEC <- function(object, newdata = NULL, nahead = 1L,
                     do.its = FALSE, do.cumulative = do.cumulative, ctr = ctr)
   if(!isTRUE(do.return.draw)){
     out$draw = NULL
+    out$vol_draw = NULL
   }
   
   class(out) <- "MSGARCH_FORECAST"
@@ -94,6 +99,7 @@ predict.MSGARCH_ML_FIT <- function(object, newdata = NULL,
                     do.its = FALSE, do.cumulative = do.cumulative, ctr = ctr)
   if(!isTRUE(do.return.draw)){
     out$draw = NULL
+    out$vol_draw = NULL
   }
   class(out) <- "MSGARCH_FORECAST"
   return(out)
@@ -116,6 +122,7 @@ predict.MSGARCH_MCMC_FIT <- function(object, newdata = NULL, nahead = 1L,
                     do.its = FALSE, do.cumulative = do.cumulative, ctr = ctr)
   if(!isTRUE(do.return.draw)){
     out$draw = NULL
+    out$vol_draw = NULL
   }
   class(out) <- "MSGARCH_FORECAST"
   return(out)
