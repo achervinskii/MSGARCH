@@ -1,7 +1,8 @@
 # MSGARCH modified for the Bayesian forecasting
-This fork is created to facilitate reproducibility of my bachelor thesis project concerned with the comparison of MSGARCH and Stochastic Volatility for the volatility forecasting.
+This fork is created to facilitate reproducibility of my bachelor thesis project concerned with the comparison of MSGARCH and Stochastic Volatility for the volatility forecasting. It includes a fix of the prediction output, and extends output with the MCMC draws of the conditional variance from the predictive distribution.
 
-## I currently do not plan to create a pull request to the original repository, because I am uncertain about the correctness of the implemented features.
+## I currently do not plan to create a pull request to the original repository, because I am uncertain about the correctness of the implemented features. 
+## Upd.: some of the changes are already implemented in the upstream repository MSGARCH.
 
 ## MSGARCH
 <a href='http://keblu.github.io/MSGARCH/'><img src='hexmsgarch_small.png' align="right"  height="120"/></a>
